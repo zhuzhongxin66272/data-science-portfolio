@@ -23,7 +23,7 @@ density, histogram or Voronoi tessellation — makes the concentration pattern e
 to read?
 
 **Visualization.** The dot density map below plots all 268 incidents on a map of
-central Tanzania; the histogram and Voronoi variants are in the project repository.
+central Tanzania; the histogram and Voronoi variants are also shown below.
 
 ![Dot density of poaching incidents in Tanzania](dot_density.png)
 
@@ -33,6 +33,16 @@ the empty buffer zones around them, and the Voronoi tessellation exposes one lar
 dark-blue cell at the centre-right edge that the histogram understates. One
 limitation: the table has no severity or species fields, so the maps show where
 incidents happen, not how serious each one was.
+
+![Histogram layer of the same incidents](histogram.png)
+
+*The histogram layer: kernel-density shading makes the hotspots and the empty buffer
+zones easier to separate than the plain dots.*
+
+![Voronoi tessellation of the same incidents](voronoi.png)
+
+*The Voronoi layer (Blues_r, max_area 1e5): one large dark cell at the centre-right
+edge of the plot is easier to spot here than in the histogram.*
 
 **Repository:** [data-science-project](https://github.com/zhuzhongxin66272/data-science-project)
 — notebook, dataset, pinned requirements and the three map images.
